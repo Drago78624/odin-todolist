@@ -4,10 +4,45 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app"></div>
+      <nav>
+        <h1>Odin - Todolist</h1>
+      </nav>
+      <main>
+        <div class="sidebar">
+          <h2 class="sidebar-heading">Projects</h2>
+          <button class="sidebar-btn"><i class="fa-solid fa-square-plus"></i> Add Project</button>
+          <ul class="projects">
+            <li class="project"><div><i class="fa-solid fa-list-check"></i> Facebook Clone</div> <i class="fa-solid fa-square-xmark close"></i></li>
+            <li class="project"><div><i class="fa-solid fa-list-check"></i> Weather App</div> <i class="fa-solid fa-square-xmark close"></i></li>
+          </ul>
+        </div>
+        <div class="todos-container">
+          <div class="todos">
+            <h2 class="todos-heading"> Facebook Clone</h2>
+            <ul class="todolist">
+              <button class="todo-btn"><i class="fa-solid fa-square-plus"></i> Add Todo</button>
+              <li class="todo">
+                <div class="title">Create UI</div>
+                <div class="actions">
+                  <div class="date">
+                    29/08/2022
+                  </div>
+                  <div class="delete">
+                    <i class="fa-solid fa-square-xmark close"></i>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <h4>Copyright &copy; 2022 Drago78624</h4>
+      </footer>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
